@@ -65,6 +65,7 @@
 h1{
     color: rgb(21, 77, 182);
     font-weight: bold;
+    
 }
 label {
     font-weight: bold 
@@ -80,11 +81,11 @@ select{
 }
 input[type="text"],
 input[type="password"] {
-    padding: 2px;
+    padding: 6px;
     border-radius: 8px;
     background-color: #ffffffff;
     border: 1px solid black;
-    width: 60%;
+    width: 40%;
     cursor: pointer;
   
 }
@@ -124,10 +125,10 @@ button:hover{
                 <form action="" method="post">
                     <div class="form-group">
                         
-                        <label for="username">Username:</label><br>
+                        <label for="username" >Username:</label>
                         <input type="text" id="username" name="username" required><br><br>
                         
-                        <label for="password">Password:</label><br>
+                        <label for="password">Password:</label>
                         <input type="password" id="password" name="password" required><br><br>
                         
                         <button type="submit">LOGIN</button><br><br>
