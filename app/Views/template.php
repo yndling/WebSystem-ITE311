@@ -54,18 +54,17 @@
     justify-content: center;     
 }
 .login {
-    background-color: #ffffff1f;
+    background-color: #ffffff;
     padding: 20px;
     border-radius: 30px;
     box-shadow: 0 12px 24px rgba(5, 5, 5, 0.685);
     width: 60%;
     text-align: center;
-    padding-top: 100px;
-    
+    padding-top: 80px;
 }
 h1{
     color: rgb(21, 77, 182);
-    
+    font-weight: bold;
 }
 label {
     font-weight: bold 
@@ -76,6 +75,8 @@ select{
     border: 2px solid #000000;
     width: 60%;
     text-align: center;
+    background-color: #ffffff;
+    cursor: pointer;
 }
 input[type="text"],
 input[type="password"] {
@@ -99,6 +100,7 @@ button{
 button:hover{
     background-color: aquamarine;
 }
+
   </style>
 </head>
 <body>
@@ -122,10 +124,10 @@ button:hover{
                 <form action="" method="post">
                     <div class="form-group">
                         
-                        <label for="username">Username:</label>
+                        <label for="username">Username:</label><br>
                         <input type="text" id="username" name="username" required><br><br>
                         
-                        <label for="password">Password:</label>
+                        <label for="password">Password:</label><br>
                         <input type="password" id="password" name="password" required><br><br>
                         
                         <button type="submit">LOGIN</button><br><br>
