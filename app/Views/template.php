@@ -9,6 +9,8 @@
       background: #5daeff;
       padding: 0.5rem 2rem;
       box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+      border-radius: 30px;
+      
     }
     nav ul {
       list-style: none;
