@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>LMS</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+  
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -121,7 +122,12 @@ button:hover{
   </div>
    <div class="container">
             <div class="login">
-                <h1 style="font-weight: bold;">Log in</h1>      
+                <h1 style="font-weight: bold;">Log in</h1>   
+                <select name="role" id="role" style="width: 25%; margin-bottom: 20px;">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="admin">Admin</option>
+                </select>   
                 <form action="" method="post">
                     <div class="form-group">
                         
