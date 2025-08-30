@@ -4,23 +4,30 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
-    public function template(): string
-    {
-        return view('template');
-    }
-
     public function index(): string
     {
-        return view('index');
+        $data = [
+            'title' => 'Home - Learning Hub',
+            'content' => view('index')
+        ];
+        return view('template', $data);
     }
 
     public function about(): string
     {
-        return view('about');
+        $data = [
+            'title' => 'About Us - Learning Hub',
+            'content' => view('about')
+        ];
+        return view('template', $data);
     }
 
     public function contact(): string
     {
-        return view('contact');
+        $data = [
+            'title' => 'Contact Us - Learning Hub',
+            'content' => view('contact')
+        ];
+        return view('template', $data);
     }
 }

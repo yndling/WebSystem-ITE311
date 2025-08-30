@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>LMS</title>
+  <title><?= $title ?? 'Learning Hub' ?></title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
   
   <style>
@@ -108,47 +108,17 @@ button:hover{
 <body>
   <nav>
     <div class="nav-container">
-      <a href="#" class="nav-brand">Learning Hub</a>
+      <a href="/" class="nav-brand">Learning Hub</a>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="<?= base_url('about') ?>">About</a></li>
+        <li><a href="<?= base_url('contact') ?>">Contact</a></li>
       </ul>
     </div>
   </nav>
   <div class="container mt-4">
-    <?php if (isset($content)) echo $content; ?>
+    <?= $content ?? '' ?>
   </div>
-   <div class="container">
-            <div class="login">
-                <h1 style="font-weight: bold;">Log in</h1>   
-                <select name="role" id="role" style="width: 25%; margin-bottom: 20px;">
-                    <option value="student">Student</option>
-                    <option value="teacher">Teacher</option>
-                    <option value="admin">Admin</option>
-                </select>   
-                <form action="" method="post">
-                    <div class="form-group">
-                        
-                        <label for="username" >Username:</label>
-                        <input type="text" id="username" name="username" required><br><br>
-                        
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" name="password" required><br><br>
-                        
-                        <button type="submit">LOGIN</button><br><br>
-                        
-                        <label for="remember">
-                            <input type="checkbox" id="remember" name="remember"> Remember me
-                        </label><br><br>
-                        
-                        <a href="#">Forgot Password?</a><br><br>
-                        <a id="register" href="#">Register</a><br><br>          
-
-                    </div>
-                </form>
-            </div>
-        </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

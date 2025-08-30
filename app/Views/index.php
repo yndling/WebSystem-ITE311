@@ -1,14 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Homepage</title>
-</head>
-<body>
-    <h1>Welcome to the Homepage</h1>
-    <nav>
-        <a href="/">Home</a> |
-        <a href="/about">About</a> |
-        <a href="/contact">Contact</a>
-    </nav>
-</body>
-</html>
+<div class="login">
+    <h1>Welcome to Learning Hub</h1>
+    <p>Your gateway to knowledge and growth</p>
+    <div class="mt-4">
+        <p>Explore our courses and start your learning journey today!</p>
+    </div>
+</div>
