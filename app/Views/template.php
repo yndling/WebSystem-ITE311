@@ -55,52 +55,11 @@
     justify-content: center;     
 }
 .login {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 0 12px 24px rgba(5, 5, 5, 0.685);
-    width: 60%;
     text-align: center;
-    padding-top: 80px;
 }
 h1{
     color: rgb(21, 77, 182);
     font-weight: bold;
-    
-}
-label {
-    font-weight: bold 
-}
-select{
-    border-radius: 25px;
-    padding: 4px;
-    border: 2px solid #000000;
-    width: 60%;
-    text-align: center;
-    background-color: #ffffff;
-    cursor: pointer;
-}
-input[type="text"],
-input[type="password"] {
-    padding: 6px;
-    border-radius: 8px;
-    background-color: #ffffffff;
-    border: 1px solid black;
-    width: 40%;
-    cursor: pointer;
-  
-}
-button{
-    border-radius: 8px;
-    background-color: aqua;
-    padding: 12px;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;;
-    width: 40%;
-}
-button:hover{
-    background-color: aquamarine;
 }
 
   </style>
